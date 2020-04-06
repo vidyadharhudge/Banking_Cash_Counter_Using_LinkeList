@@ -2,15 +2,17 @@ package com.Banking_Cash_Counter_Using_Linkedlist1;
 
 public class Banking implements bank
 {
-    //user deposit cash
+    ///user deposit cash
+    // How much money  added by user it get depoisted to user balance
     public int depositCash(int cash, int ubalance)
     {
 
         ubalance += cash;
         return ubalance;
     }
-
-    // user withdraw cash
+    ///user withdraw cash methode
+    // if balance lesss than o it show insufficent balance
+    //  how much cash it withdrawl it remove from balance
     public int withdrawCash(int cash, int ubalance)
     {
         if (ubalance <= 0)
